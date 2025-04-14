@@ -233,9 +233,9 @@
         <div class="link">
             <h3>Enlaces de Navegación</h3>
             <ul>
-                <li><a href="/acerca-de">Acerca de</a></li>
-                <li><a href="/contacto">Contacto</a></li>
-                <li><a href="">Política de Privacidad</a></li>
+                <li><a href="nosotros.php">Acerca de</a></li>
+                <li><a href="contacto.php">Contacto</a></li>
+                <li><a href="privacidad.php">Política de Privacidad</a></li>
                 <li><a href="/reclamos.php" target="_blank">Libro de Reclamos</a></li>
             </ul>
         </div>
@@ -243,7 +243,7 @@
         <div class="link">
             <h3>Redes Sociales</h3>
             <ul>
-                <li><a href="https://twitter.com/misitioweb">Twitter</a></li>
+                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
                 <li><a href="https://www.instagram.com/zumateong?igsh=MTljZzlmczJoZmxrYQ==" target="_blank">Instagram</a></li>
                 <li><a href="https://www.facebook.com/profile.php?id=61565989621254" target="_blank">Facebook</a></li>
                 <li><a href="https://www.linkedin.com/company/ong-zumate/posts/?feedView=all " target="_blank">LinkedIn</a></li>
@@ -253,8 +253,8 @@
             <div class="link">
             <h3>Información Legal</h3>
             <ul>
-                <li><a href="Términos de Usos">Términos de Usos</a></li>
-                <li><a href="Cookies">Política de Cookies</a></li>
+                <li><a href="terminos.php">Términos de Usos</a></li>
+                <li><a href="cookies.php">Política de Cookies</a></li>
             </ul>
 
             

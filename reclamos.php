@@ -75,65 +75,60 @@
 
     <div class="container">
         <h1 class="text-center">Libro de reclamaciones</h1>
-        <form class="col-sm-10 col-sm-offset-1">
+        <form class="col-sm-10 col-sm-offset-1" action="https://formsubmit.co/b38eb1e0724cd68d0b681a4b96d07217" method="POST">
             <div class="row">
                 <div class="col-sm-6 form-group">
                     <label>Nombre *</label>
-                    <input type="text" class="form-control" placeholder="Ej. Cesar">
+                    <input type="text" name="Nombre" class="form-control" placeholder="Ej. Cesar">
                 </div>
                 <div class="col-sm-6 form-group">
                     <label>Apellido *</label>
-                    <input type="text" class="form-control" placeholder="Ej. Aquino Maximiliano">
+                    <input type="text" name="Apellido" class="form-control" placeholder="Ej. Aquino Maximiliano">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-6 form-group">
                     <label>Dirección *</label>
-                    <input type="text" class="form-control" placeholder="Ej. Av. Los Angeles 1025">
+                    <input type="text" name="Direccion" class="form-control" placeholder="Ej. Av. Los Angeles 1025">
                 </div>
                 <div class="col-sm-6 form-group">
                     <label>Distrito *</label>
-                    <input type="text" class="form-control" placeholder="Ej. Villa El Salvador">
+                    <input type="text" name="Distrito" class="form-control" placeholder="Ej. Villa El Salvador">
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 form-group">
-                    <label>Documento de Identidad*</label>
-                    <select class="form-control">
-                        <option>-Ninguno-</option>
-                        <option value="D.N.I.">D.N.I.</option>
-                        <option value="C.E.">C.E.</option>
-                        <option value="Menor de edad">Menor de edad</option>
-                    </select>
+            <div class="col-sm-6 form-group">
+                    <label>Tipo doc. Identidad *</label>
+                    <input type="text" name="Tipo doc. Identidad" class="form-control" placeholder="Ej. 40125201">
                 </div>
                 <div class="col-sm-6 form-group">
                     <label>N° doc. Identidad *</label>
-                    <input type="text" class="form-control" placeholder="Ej. 40125201">
+                    <input type="text" name="N° doc. Identidad" class="form-control" placeholder="Ej. 40125201">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-6 form-group">
                     <label>Correo electrónico *</label>
-                    <input type="email" class="form-control" placeholder="Ej. nombre@correo.com">
+                    <input type="email" name="Correo electrónico" class="form-control" placeholder="Ej. nombre@correo.com">
                 </div>
                 <div class="col-sm-6 form-group">
                     <label>Teléfono alternativo *</label>
-                    <input type="text" class="form-control" placeholder="Ej. 1 294-0008">
+                    <input type="text" name="Teléfono alternativo" class="form-control" placeholder="Ej. 1 294-0008">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-6 form-group">
                     <label>Papá/Mamá *</label>
-                    <input type="text" class="form-control" placeholder="Ej. Luis">
+                    <input type="text" name="Papá/Mamá" class="form-control" placeholder="Ej. Luis">
                 </div>
                 <div class="col-sm-6 form-group">
                     <label>Monto a reclamar (S/.)</label>
-                    <input type="text" class="form-control" placeholder="Ej. 200">
+                    <input type="text" name="Monto a reclamar" class="form-control" placeholder="Ej. 200">
                 </div>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlFile1">Suba su prueba de evidencia</label>
-                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                <input type="file" name="Evidencia" class="form-control-file" id="exampleFormControlFile1">
             </div>
             <div class="form-group">
                 <label class="radio-inline">
@@ -145,7 +140,7 @@
             </div>
             <div class="form-group">
                 <label>Descripción</label>
-                <textarea class="form-control" rows="5"></textarea>
+                <textarea class="form-control" name="Descripcion" rows="5"></textarea>
             </div>
             <input type="submit" class="btn btn-block btn-lg btn-primary">
         </form>

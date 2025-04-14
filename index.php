@@ -1,3 +1,16 @@
+<?php
+// Iniciar sesión
+session_start();
+
+// Verificar si el usuario está logueado
+if (isset($_SESSION['usuario'])) {
+    // El usuario está logueado, podemos obtener su nombre
+    $nombre_usuario = $_SESSION['usuario']; // Esto es lo que almacenaste al momento del login
+} else {
+    // Si no está logueado, el nombre del usuario estará vacío o podemos poner un mensaje
+    $nombre_usuario = "";
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -13,7 +26,7 @@
     <link rel="stylesheet" href="whatsapp.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    
+    <script src="//code.tidio.co/xhva5gtxexj8i56v1ngfiljln6kjbmjk.js" async></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body class="hidden">
@@ -695,17 +708,17 @@
         <div class="link">
             <h3>Enlaces de Navegación</h3>
             <ul>
-                <li><a href="/acerca-de">Acerca de</a></li>
-                <li><a href="/contacto">Contacto</a></li>
-                <li><a href="">Política de Privacidad</a></li>
-                <li><a href="/reclamos.php" target="_blank">Libro de Reclamos</a></li>
+                <li><a href="nosotros.php">Acerca de</a></li>
+                <li><a href="contacto.php">Contacto</a></li>
+                <li><a href="privacidad.php">Política de Privacidad</a></li>
+                <li><a href="reclamos.php" target="_blank">Libro de Reclamos</a></li>
             </ul>
         </div>
 
         <div class="link">
             <h3>Redes Sociales</h3>
             <ul>
-                <li><a href="https://twitter.com/misitioweb">Twitter</a></li>
+                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
                 <li><a href="https://www.instagram.com/zumateong?igsh=MTljZzlmczJoZmxrYQ==" target="_blank">Instagram</a></li>
                 <li><a href="https://www.facebook.com/profile.php?id=61565989621254" target="_blank">Facebook</a></li>
                 <li><a href="https://www.linkedin.com/company/ong-zumate/posts/?feedView=all " target="_blank">LinkedIn</a></li>
@@ -716,7 +729,7 @@
             <h3>Información Legal</h3>
             <ul>
                 <li><a href="terminos.php">Términos de Usos</a></li>
-                <li><a href="Cookies">Política de Cookies</a></li>
+                <li><a href="cookies.php">Política de Cookies</a></li>
             </ul>
 
             

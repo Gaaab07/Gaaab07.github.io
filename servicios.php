@@ -81,34 +81,34 @@
 
     <div class="container">
     <h2 class="text-center">¿Estas listo para formar parte del equipo REXHA Perú?<br>¡Trabaja con nosotros!</h2>
-    <form action="reclamacion.php" method="POST">
+    <form action="https://formsubmit.co/nathalyjulca93@gmail.com" method="POST">
         <div class="row">
             <!-- Columna de Datos Personales -->
             <div class="col-md-6">
                 <h4>Datos Personales:</h4>
                 <div class="form-group">
                     <label>NOMBRES*</label>
-                    <input type="text" class="form-control" placeholder="Ej. Cesar" required>
+                    <input type="text" name="Nombres" class="form-control" placeholder="Ej. Cesar" required>
                 </div>
                 <div class="form-group">
                     <label>APELLIDOS*</label>
-                    <input type="text" class="form-control" placeholder="Ej. Aquino Maximiliano" required>
+                    <input type="text" name="Apellidos" class="form-control" placeholder="Ej. Aquino Maximiliano" required>
                 </div>
                 <div class="form-group">
                     <label>CORREO*</label>
-                    <input type="email" class="form-control" placeholder="Ej. nombre@correo.com" required>
+                    <input type="email" name="Correo" class="form-control" placeholder="Ej. nombre@correo.com" required>
                 </div>
                 <div class="form-group">
                     <label>TELEFONO*</label>
-                    <input type="text" class="form-control" placeholder="Ej. 1 294-0008" required>
+                    <input type="text" name="Telefono" class="form-control" placeholder="Ej. 1 294-0008" required>
                 </div>
                 <div class="form-group">
                     <label>CELULAR* (Ejemplo: "+51")</label>
-                    <input type="text" class="form-control" placeholder="Ej. +51 994-000-000" required>
+                    <input type="text" name="Celular" class="form-control" placeholder="Ej. +51 994-000-000" required>
                 </div>
                 <div class="form-group">
                    <label>EDAD*</label>
-                   <input type="number" class="form-control" placeholder="Ej. 25" required>
+                   <input type="number" name="Edad" class="form-control" placeholder="Ej. 25" required>
                 </div>
             </div>
 
@@ -117,38 +117,29 @@
                 <h4>Datos de Solicitud:</h4>
                 <div class="form-group">
                     <label>¿CÓMO CONOCISTE NUESTRA WEB?*</label>
-                    <input type="text" class="form-control" placeholder="Ej. Redes Sociales" required>
+                    <input type="text" name="¿Como conociste nuestra web?" class="form-control" placeholder="Ej. Redes Sociales" required>
                 </div>
                 <div class="form-group">
                     <label>¿QUÉ EXPERIENCIA INMOBILIARIA TIENES?*</label>
-                    <textarea class="form-control" placeholder="Describe tu experiencia" rows="3" required></textarea>
+                    <textarea class="form-control" name="¿Qué experiencia inmobiliaria tienes?" placeholder="Describe tu experiencia" rows="3" required></textarea>
                 </div>
                 <div class="form-group">
                     <label>¿EN DÓNDE TE GUSTARÍA POSTULARTE?*</label>
-                    <select class="form-control" required>
-                        <option value="">Selecciona un departamento</option>
-                        <option value="Lima">Lima</option>
-                        <option value="Arequipa">Arequipa</option>
-                        <option value="Cuzco">Cuzco</option>
-                    </select>
+                    <input type="text" name="¿En donde te gustaria postularte?" class="form-control" placeholder="Ej. Lima" required>
                 </div>
+
                 <div class="form-group">
-                    <select class="form-control" required>
-                        <option value="">Selecciona una provincia</option>
-                        <option value="Provincia1">Provincia1</option>
-                        <option value="Provincia2">Provincia2</option>
-                    </select>
+                    <label>Provincia*</label>
+                    <input type="text" name="Provincia" class="form-control" placeholder="Ej. Lima" required>
                 </div>
+                
                 <div class="form-group">
-                    <select class="form-control" required>
-                        <option value="">Selecciona un distrito</option>
-                        <option value="Distrito1">Distrito1</option>
-                        <option value="Distrito2">Distrito2</option>
-                    </select>
+                    <label>Distrito*</label>
+                    <input type="text" name="Distrito" class="form-control" placeholder="Ej. Los Olivos" required>
                 </div>
                 <div class="form-group">
                     <label>Cuentanos un poco de ti*</label>
-                    <textarea class="form-control" placeholder="Cuéntanos sobre ti" rows="3" required></textarea>
+                    <textarea class="form-control" name="Cuentanos un poco de ti" placeholder="Cuéntanos sobre ti" rows="3" required></textarea>
                 </div>
             </div>
         </div>
@@ -164,9 +155,9 @@
         <div class="link">
             <h3>Enlaces de Navegación</h3>
             <ul>
-                <li><a href="/acerca-de">Acerca de</a></li>
-                <li><a href="/contacto">Contacto</a></li>
-                <li><a href="">Política de Privacidad</a></li>
+                <li><a href="nosotros.php">Acerca de</a></li>
+                <li><a href="contacto.php">Contacto</a></li>
+                <li><a href="privacidad.php">Política de Privacidad</a></li>
                 <li><a href="/reclamos.php" target="_blank">Libro de Reclamos</a></li>
             </ul>
         </div>
@@ -174,7 +165,7 @@
         <div class="link">
             <h3>Redes Sociales</h3>
             <ul>
-                <li><a href="https://twitter.com/misitioweb">Twitter</a></li>
+                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
                 <li><a href="https://www.instagram.com/zumateong?igsh=MTljZzlmczJoZmxrYQ==" target="_blank">Instagram</a></li>
                 <li><a href="https://www.facebook.com/profile.php?id=61565989621254" target="_blank">Facebook</a></li>
                 <li><a href="https://www.linkedin.com/company/ong-zumate/posts/?feedView=all " target="_blank">LinkedIn</a></li>
@@ -184,8 +175,8 @@
             <div class="link">
             <h3>Información Legal</h3>
             <ul>
-                <li><a href="Términos de Usos">Términos de Usos</a></li>
-                <li><a href="Cookies">Política de Cookies</a></li>
+                <li><a href="terminos.php">Términos de Usos</a></li>
+                <li><a href="cookies.php">Política de Cookies</a></li>
             </ul>
 
             

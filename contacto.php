@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>REXHA Perú-Inmobiliaria</title>
+    <link rel="icon" type="image/jpeg" href="images/logorexha.JPG">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="whatsapp.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body class="hidden">
     <div class="centrado" id="onload">
@@ -79,49 +82,38 @@
     
     <div class="container">
         <h1 class="text-center">Contáctanos</h1>
-        <form action="reclamacion.php" method="POST">
+        <form action="https://formsubmit.co/b38eb1e0724cd68d0b681a4b96d07217" method="POST">
             <div class="row">
                 <!-- Columna de Datos Personales -->
                 <div class="col-md-6">
                     <h4>Datos Personales:</h4>
                     <div class="form-group">
                         <label>TIPO DE SOLICITUD*</label>
-                        <select class="form-control" required>
-                            <option>---------</option>
-                            <option value="COTIZACION">COTIZACION</option>
-                            <option value="CONSULTA">CONSULTA</option>
-                            <option value="SOBRE TU PROPIEDAD">SOBRE TU PROPIEDAD</option>
-                            <option value="OTRO MOTIVO">OTRO MOTIVO</option>
-                        </select>
+                        <input type="text" name="Tipo de solicitud" class="form-control" placeholder="Ej. Cotizacion,Consulta,Sobre mi propiedad,Otro motivo" required>
                     </div>
                     <div class="form-group">
                         <label>NOMBRES*</label>
-                        <input type="text" class="form-control" placeholder="Ej. Cesar" required>
+                        <input type="text" name="Nombres" class="form-control" placeholder="Ej. Cesar" required>
                     </div>
                     <div class="form-group">
                         <label>APELLIDOS*</label>
-                        <input type="text" class="form-control" placeholder="Ej. Aquino Maximiliano" required>
+                        <input type="text" name="Apellidos" class="form-control" placeholder="Ej. Aquino Maximiliano" required>
                     </div>
                     <div class="form-group">
                         <label>DIRECCIÓN*</label>
-                        <input type="text" class="form-control" placeholder="Ej. Av. Los Angeles 1025" required>
+                        <input type="text" name="Direccion"class="form-control" placeholder="Ej. Av. Los Angeles 1025" required>
                     </div>
                     <div class="form-group">
                         <label>DISTRITO*</label>
-                        <input type="text" class="form-control" placeholder="Ej. Villa El Salvador" required>
+                        <input type="text" name="Distrito" class="form-control" placeholder="Ej. Villa El Salvador" required>
                     </div>
                     <div class="form-group">
                         <label>DOCUMENTO DE IDENTIDAD*</label>
-                        <select class="form-control" required>
-                            <option>--------</option>
-                            <option value="D.N.I.">D.N.I.</option>
-                            <option value="C.E.">C.E.</option>
-                            <option value="Menor de edad">Menor de edad</option>
-                        </select>
+                        <input type="text" name="Tipo DNI" class="form-control" placeholder="Ej. D.N.I., C.E.,Menos de edad" required>
                     </div>
                     <div class="form-group">
                         <label>N° DOC. IDENTIDAD*</label>
-                        <input type="text" class="form-control" placeholder="Ej. 40125201" required>
+                        <input type="text" name="DNI" class="form-control" placeholder="Ej. 40125201" required>
                     </div>
                 </div>
 
@@ -130,15 +122,15 @@
                     <h4>Datos de Contacto:</h4>
                     <div class="form-group">
                         <label>CORREO ELECTRÓNICO*</label>
-                        <input type="email" class="form-control" placeholder="Ej. nombre@correo.com" required>
+                        <input type="email" name="Correo electronico" class="form-control" placeholder="Ej. nombre@correo.com" required>
                     </div>
                     <div class="form-group">
                         <label>CELULAR*</label>
-                        <input type="text" class="form-control" placeholder="Ej. +51 994-000-000" required>
+                        <input type="text" name="Celular" class="form-control" placeholder="Ej. +51 994-000-000" required>
                     </div>
                     <div class="form-group">
                         <label>Comentarios</label>
-                        <textarea class="form-control" placeholder="Escribe tus comentarios aquí..." rows="3"></textarea>
+                        <textarea name="Comentarios" class="form-control" placeholder="Escribe tus comentarios aquí..." rows="3"></textarea>
                     </div>
                     <div class="form-group text-center">
                        <img src="images/logorexha.JPG" alt="Descripción de la imagen" class="img-fluid">
@@ -167,9 +159,9 @@
         <div class="link">
             <h3>Enlaces de Navegación</h3>
             <ul>
-                <li><a href="/acerca-de">Acerca de</a></li>
-                <li><a href="/contacto">Contacto</a></li>
-                <li><a href="">Política de Privacidad</a></li>
+                <li><a href="nosotros.php">Acerca de</a></li>
+                <li><a href="contacto.php">Contacto</a></li>
+                <li><a href="privacidad.php">Política de Privacidad</a></li>
                 <li><a href="/reclamos.php" target="_blank">Libro de Reclamos</a></li>
             </ul>
         </div>
@@ -177,7 +169,7 @@
         <div class="link">
             <h3>Redes Sociales</h3>
             <ul>
-                <li><a href="https://twitter.com/misitioweb">Twitter</a></li>
+                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
                 <li><a href="https://www.instagram.com/zumateong?igsh=MTljZzlmczJoZmxrYQ==" target="_blank">Instagram</a></li>
                 <li><a href="https://www.facebook.com/profile.php?id=61565989621254" target="_blank">Facebook</a></li>
                 <li><a href="https://www.linkedin.com/company/ong-zumate/posts/?feedView=all " target="_blank">LinkedIn</a></li>
@@ -187,8 +179,8 @@
             <div class="link">
             <h3>Información Legal</h3>
             <ul>
-                <li><a href="Términos de Usos">Términos de Usos</a></li>
-                <li><a href="Cookies">Política de Cookies</a></li>
+                <li><a href="terminos.php">Términos de Usos</a></li>
+                <li><a href="cookies.php">Política de Cookies</a></li>
             </ul>
 
             

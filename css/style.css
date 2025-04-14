@@ -1000,6 +1000,18 @@ h2 {
         padding: 30px;
     }
 
+    .search-container {
+        text-align: center;
+        margin: 40px 0;
+    }
+    
+    .search-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
     .testimonial-content{
         margin-top: 20px;
         flex-direction: column;
